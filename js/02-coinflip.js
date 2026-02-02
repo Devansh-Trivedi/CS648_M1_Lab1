@@ -1,9 +1,7 @@
-var coinFlip = Math.floor(Math.random() * 2);
-var isHeads = coinFlip === 0;
-EA;
+const coinFlip = Math.floor(Math.random() * 2);
+const choice = (prompt('Heads or Tails?') || '').trim().toLowerCase();
 
-var choice = prompt('Heads or Tails?');
-choice = (choice || '').toLowerCase().trim();
+const isHeads = coinFlip === 0;
 
 if (isHeads && choice === 'heads') {
   alert('The flip was heads and you chose heads...you win!');
@@ -14,5 +12,5 @@ if (isHeads && choice === 'heads') {
 } else if (!isHeads && choice === 'tails') {
   alert('The flip was tails and you chose tails...you win!');
 } else {
-  alert('Please type either Heads or Tails.');
+  alert('Please refresh and type exactly: Heads or Tails');
 }
